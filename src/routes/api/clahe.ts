@@ -18,7 +18,6 @@ claheRoute.get(
 
         if (!fs.existsSync(procImgPath)) {
             await claheImage(imgPath, filename, width, height)
-            console.log(imgPath, filename)
             res.sendFile(procImgPath)
         } else {
             res.sendFile(procImgPath)

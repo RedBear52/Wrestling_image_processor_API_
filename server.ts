@@ -1,4 +1,4 @@
-import routes from '../routes/index'
+import routes from './src/routes/index'
 import express from 'express'
 
 const app = express()

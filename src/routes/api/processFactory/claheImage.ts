@@ -1,6 +1,5 @@
 import sharp from 'sharp'
 import path from 'path'
-import { parse } from 'path/posix'
 
 const claheImage = async (
     imgPath: string,
@@ -14,7 +13,7 @@ const claheImage = async (
     await sharp(imgPath)
         .clahe({
             width: parseInt(`${width}`),
-            height: parseInt(`${height}`)
+            height: parseInt(`${height}`),
         })
         // .toBuffer()
         .toFile(procImgPath)
