@@ -6,6 +6,10 @@
     "engines": {
         "node": "18.x"
     },
+    "config": {
+        "aws_region": "us-east-1",
+        "PORT": "8080"
+    },
     "scripts": {
         "start": "node ./dist/server",
         "spec": "jasmine",
