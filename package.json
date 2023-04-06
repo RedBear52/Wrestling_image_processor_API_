@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "",
     "main": "dist/src/server/server.js",
+    "engines": {
+        "node": "18.x"
+    },
     "scripts": {
         "start": "nodemon ./dist/src/server/server",
         "spec": "jasmine",
@@ -10,9 +13,6 @@
         "lint": "eslint . --ext .ts",
         "format": "prettier  --config .prettierrc 'src/**/*.ts' --write",
         "test": "npm run build && npm run spec"
-    },
-    "engines": {
-        "node": "18.x"
     },
     "keywords": [],
     "author": "",
