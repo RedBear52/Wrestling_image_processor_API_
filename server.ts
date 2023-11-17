@@ -2,7 +2,7 @@ import routes from './src/routes/index'
 import express from 'express'
 
 const app = express()
-const port = 8080
+const port = 3200
 
 app.use('/api', routes)
 
